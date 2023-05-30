@@ -1,0 +1,52 @@
+body{
+    background-color: #d0cccd ;
+}
+
+.container{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.filter{
+    margin-bottom: 20px;
+}
+
+.filter label{
+    margin-right: 10px;
+}
+
+.filter input[type="text"],
+.filter select{
+    margin-right: 10px;
+}
+
+.results{
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td{
+    border: 1px solid #000000;
+    padding: 6px;
+    text-align: left;
+}
+
+.reset-button{
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.reset-button:hover{
+    background-color: rgb(0, 30, 34);
+    color: #fff;
+}
+
