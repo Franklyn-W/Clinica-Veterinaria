@@ -15,7 +15,7 @@ session_start();
 <body>
     <div class="menu-container">
         <div class="menu-header">
-             <h3>Bem-Vindo <p></p><?php echo $_SESSION['nome'];?></h3>
+             <h2>Bem-Vindo <p><?php echo $_SESSION['nome'];?></p></h2>
             <button class="menu-toggle">☰</button>
         </div>
         <nav class="menu">
