@@ -1,10 +1,17 @@
-/*corpo*/
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../Img/fundo.jpg);
+/****Reset da Pagina****/
+*{
+    margin: 0;
+    padding: 0;
 }
 
+
+/****Estilo Gerais****/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../Img/fundo.jpg);
+}
+
+/****Container de Login****/
 .login-container{
     display: flex;
     flex-direction: column;
@@ -22,37 +29,83 @@ body{
     object-fit: cover;
     border-radius: 50%;
 }
+
 .login-container h1{
     font-size: 32px;
     margin-top: 24px;
 }
+
+/****Formulario de login****/
 form{
     display:flex;
     flex-direction: column;
     margin-top: 24px;
 }
+
 label{
     font-size: 16px;
     margin-bottom: 8px;
     margin-top: 10px;
 }
+
 input{
     padding: 8px 16px;
     font-size: 16px;
     border-radius: 4px;
     margin-bottom: 16px;
 }
+
+/****Seção de Desenvolvedores****/
+.developers-section {
+    margin-top: 30px;
+}
+
+.developers-section ul{
+    display: flex;
+    flex-direction: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.developers-section li{
+    margin-right: 10px;
+    color: #000;
+}
+
+.developers-section li:last-child{
+    margin-right: 0;
+}
+.developers-section li:not(:last-child)::after{
+    content: "|";
+    margin-left: 10px;
+    color: #000;
+}
+
+
+.developers-section a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.developers-section a:hover{
+    background-color: #a5e2ff;
+    color: #000000;
+}
+
+/****Botão de Entrar****/
 button{
     padding: 8px 16px;
     font-size: 16px;
-    background-color: #05befc;
+    background-color: #ff9f45;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 button:hover{
-    background-color: #a5e2ff;
+    background-color: #ffb618;
 }
 @media only screen and  (max-width: 480px){
     .login-container{
