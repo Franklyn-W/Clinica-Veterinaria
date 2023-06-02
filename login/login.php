@@ -27,11 +27,21 @@
             if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
                 <div class="text-danger">Opa! Você esqueceu de se apresentar.<br> Informe suas credenciais aqui primeiro.</div>
             <?php } ?>
-
+            
 
 
             <button type="submit">Entrar</button>
         </form>
+        <div class="developers-section">
+            <h3>Desenvolvedores</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/viegasrick/viegasrick" target="_blank">Rikelmen Viegas<a>
+                    <a href="https://github.com/Franklyn-W" target="_blank">Franklyn Winston</a>
+                    <a href="https://github.com/PBVieira2k21" target="_blank">Mateus Vieira</a>
+                </li>
+            </ul>  
+        </div> 
     </div>
 </body>
 
