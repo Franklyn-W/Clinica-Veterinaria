@@ -27,11 +27,12 @@
             if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
                 <div class="text-danger">Opa! Você esqueceu de se apresentar.<br> Informe suas credenciais aqui primeiro.</div>
             <?php } ?>
-            
+
 
 
             <button type="submit">Entrar</button>
         </form>
+<<<<<<< HEAD
         <div class="developers-section">
             <h3>Desenvolvedores</h3>
             <ul>
@@ -42,6 +43,8 @@
                 </li>
             </ul>  
         </div> 
+=======
+>>>>>>> parent of d38da0c (notificação da tela de login)
     </div>
 </body>
 
