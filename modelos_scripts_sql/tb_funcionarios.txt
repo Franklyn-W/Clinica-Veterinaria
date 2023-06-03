@@ -1,0 +1,39 @@
+-- Table: public.tb_funcionarios
+
+-- DROP TABLE IF EXISTS public.tb_funcionarios;
+
+CREATE TABLE IF NOT EXISTS public.tb_funcionarios
+(
+    id_funcionario integer NOT NULL DEFAULT nextval('tb_funcionarios_id_funcionario_seq'::regclass),
+    nome_funcionario character varying COLLATE pg_catalog."default",
+    rg_funcionario character varying COLLATE pg_catalog."default",
+    cpf_funcionario character varying COLLATE pg_catalog."default" NOT NULL,
+    telefone_funcionario character varying COLLATE pg_catalog."default",
+    email_funcionario character varying COLLATE pg_catalog."default",
+    cep_funcionario character varying COLLATE pg_catalog."default",
+    endereco_funcionario character varying COLLATE pg_catalog."default",
+    numero_casa_funcionario character varying COLLATE pg_catalog."default",
+    bairro_funcionario character varying COLLATE pg_catalog."default",
+    cidade_funcionario character varying COLLATE pg_catalog."default",
+    uf_funcionario character varying COLLATE pg_catalog."default",
+    salario_funcionario character varying COLLATE pg_catalog."default",
+    perfil_acesso_funcionario character varying COLLATE pg_catalog."default",
+    dt_criacao_funcionario timestamp with time zone DEFAULT CURRENT_TIMESTAMP(2),
+    dt_atualizacao_funcionario timestamp with time zone DEFAULT CURRENT_TIMESTAMP(2),
+    CONSTRAINT tb_funcionarios_pkey PRIMARY KEY (cpf_funcionario)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.tb_funcionarios
+    OWNER to postgres;
+
+-- Trigger: funcionario_timestamp
+
+-- DROP TRIGGER IF EXISTS funcionario_timestamp ON public.tb_funcionarios;
+
+CREATE TRIGGER funcionario_timestamp
+    BEFORE INSERT OR UPDATE 
+    ON public.tb_funcionarios
+    FOR EACH ROW
+    EXECUTE FUNCTION public.update_timestamp_funcionarios();

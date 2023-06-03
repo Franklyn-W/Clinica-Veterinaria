@@ -1,11 +1,15 @@
-<?php 
+<?php
 
 require_once '../../../scripts/validador_acesso.php';
+require_once('../../../scripts/conexao.php');
+
+
 
 ?>
 
 <!DOCTYPE html>
 <html lang="pt/br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,16 +17,19 @@ require_once '../../../scripts/validador_acesso.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>novo cadastro</title>
 </head>
+
 <body>
     <div class="container">
         <h2>Cadastro de Animal</h2>
-        <form action="" method="post">
+        <form action="../../../scripts/script_cadastrar_pet.php" method="post">
 
             <div class="left-section">
-                <label for="dono">Nome do Dono:</label>
-                <select id="dono" required>
-                    <option value="">Selecione o Dono</option>
-                </select>
+
+                <label for="cpf_tutor">CPF do Tuutor:</label>
+                <input type="text" name="cpf_tutor" id="cpf_tutor" readonly>
+
+                <label for="nome_tutor">Nome do Tutor</label>
+                <input type="text" name="nome_tutor" id="nome_tutor" readonly>
 
                 <label for="animal">Nome do Animal:</label>
                 <input type="text" id="animal" required>
@@ -39,7 +46,7 @@ require_once '../../../scripts/validador_acesso.php';
 
                 <label for="especie">Espécie</label>
                 <input type="text" id="especie">
-                
+
                 <label for="descricao">Descrição</label>
                 <textarea id="descricao" rows="5"></textarea>
             </div>
@@ -56,7 +63,7 @@ require_once '../../../scripts/validador_acesso.php';
                     <label for="anos">Anos</label>
                     <input type="radio" name="anos-meses" id="anos" required>
                 </div>
-                
+
                 <div class="button-group">
                     <button type="reset" onclick="LimparFormulario()">Limpar</button>
                     <a href="../../menu/menu.php"> <button type="button" onclick="cancelarCadastro()">Cancelar</button></a>
@@ -65,7 +72,8 @@ require_once '../../../scripts/validador_acesso.php';
             </div>
         </form>
     </div>
-    
+
     <script src="cadastro_animal.js"></script>
 </body>
+
 </html>
