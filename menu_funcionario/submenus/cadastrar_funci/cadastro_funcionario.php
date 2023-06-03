@@ -1,3 +1,6 @@
+<?php 
+ require_once '../../../scripts/validador_acesso.php';
+?>
 <!DOCTYPE html>
 <html lang="pt/br">
 <head>
@@ -58,7 +61,7 @@
 
             <div class="button-group">
                 <button type="reset" class="limpar">Limpar</button>
-                <button type="button" class="cancelar" onclick="cancelarCadastro()">Cancelar</button>
+                <a href="../../menu/menu.php"> <button type="button" class="cancelar" onclick="cancelarCadastro()">Cancelar</button></a>
                 <button type="submit" class="cadastrar">Cadastrar</button>
             </div>
         </form>

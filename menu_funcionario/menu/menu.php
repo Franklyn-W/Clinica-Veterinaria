@@ -1,5 +1,5 @@
 <?php 
-session_start();
+ require_once '../../scripts/validador_acesso.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ session_start();
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="">Agendamento</a></li>
+                <li><a href="../agendamento/agendamento.php">Agendamento</a></li>
                 <li class="submenu">
                     <a id="novo-cadastro">Novo Cadastro</a>
                     <ul class="hidden">
@@ -32,8 +32,8 @@ session_start();
                         
                     </ul>
                 </li>
-                <li><a href="">Registro</a></li>
-                <li><a href="">Agenda</a></li>
+                <li><a href="../registro/registo.php">Registro</a></li>
+                <li><a href="../agendar/agenda.php">Agenda</a></li>
                 <li><a class="logout" href="../../scripts/logoff.php">Sair</a></li>
             </ul>
         </nav>        
