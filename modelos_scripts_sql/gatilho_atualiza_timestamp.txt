@@ -1,0 +1,14 @@
+
+CREATE OR REPLACE FUNCTION update_timestamp() -- mudar nome da funcção
+RETURNS TRIGGER AS $$
+BEGIN
+      NEW.updated = time(); -- mudar nome
+      RETURN NEW;
+END;
+$$ language 'plpgsql';
+COMMIT;
+
+CREATE TRIGGER user_timestamp BEFORE INSERT OR UPDATE ON account
+FOR EACH ROW EXECUTE PROCEDURE update_timestamp();
+
+COMMIT;
