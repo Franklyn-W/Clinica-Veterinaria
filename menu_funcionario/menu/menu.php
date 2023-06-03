@@ -34,7 +34,7 @@ session_start();
                 </li>
                 <li><a href="">Registro</a></li>
                 <li><a href="">Agenda</a></li>
-                <li><a class="logout" href="">Sair</a></li>
+                <li><a class="logout" href="../../scripts/logoff.php">Sair</a></li>
             </ul>
         </nav>        
     </div>
