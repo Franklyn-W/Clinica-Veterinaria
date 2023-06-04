@@ -28,7 +28,7 @@ if ($linhas[3] == $usuario && $linhas[2] == $senha) {
     }
 
     if ($usuario_perfil_acesso == 'MEDICO') {
-        # code...
+        header('location: ../menu_funcionario/menu/menu_medico.php');
     }
 
     if ($usuario_perfil_acesso == "CLIENTE") {

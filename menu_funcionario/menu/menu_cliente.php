@@ -1,3 +1,3 @@
 <?php 
-echo "Login Cliente";
+echo "Login Cliente em construção";
 ?>

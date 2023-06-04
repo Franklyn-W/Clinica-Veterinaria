@@ -13,55 +13,57 @@
 <body>
     <div class="container">
         <h2>Cadastro medico</h2>
-        <form action="" method="post">
+        <form action="../../../scripts/script_cadastrar_medico.php" method="post">
             <div class="left-section">
+                
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" required>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" required>
+                
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" required>
+                
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" required>
+                
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro">
+                
+                <label for="uf">UF</label>
+                <input type="text" id="uf" name="uf">
 
                 <label for="cmrv">CRMV</label>
-                <input type="number" id="cmrv" required>
-
-                <label for="rg">RG</label>
-                <input type="text" id="rg" required>
-
-                <label for="cpf">CPF</label>
-                <input type="text" id="cpf" required>
-
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" required>
-
-                <label for="email">E-mail</label>
-                <input type="text" id="email" required>
-
-                <label for="cidade">Cidade</label>
-                <input type="text" id="cidade" required>
-
-                <label for="endereco">Endereço</label>
-                <input type="text" id="endereco" required>
-
+                <input type="text" id="cmrv" name="crmv" required>                
             </div>
 
             <div class="right-section">
-                <label for="cpf">Cargo</label>
-                <input type="text" id="cargo" required>
-
-                <label for="cpf">Salario</label>
-                <input type="text" id="salario" required>
-
+                <label for="rg">RG</label>
+                <input type="text" id="rg" name="rg" required>
+                
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone" required>
+                
                 <label for="cep">Cep</label>
-                <input type="text" id="cep">
-
-                <label for="bairro">Bairro</label>
-                <input type="text" id="bairro">
-
+                <input type="text" id="cep" name="cep">
+                
                 <label for="numero-casa">Numero da Casa</label>
-                <input type="number" id="numero-casa">
+                <input type="text" id="numero-casa" name="numero-casa">
+                
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" required>
 
-                <label for="uf">UF</label>
-                <input name="uf" type="text" id="uf">
+                <label for="cargo">Cargo</label>
+                <input type="text" id="cargo" name="cargo" required>
+
+                <label for="salario">Salario</label>
+                <input type="text" id="salario" name="salario" required>
             </div>
 
-            <div class="button-group">
+            <div class="linha-espaço">
+            </div>
+            <div class="button-group"> <!-- Precisa descer mais os botões, estão muito proximos dos input -->
                 <button type="reset" class="limpar">Limpar</button>
                 <a href="../../menu/menu.php"> <button type="button" class="cancelar" onclick="cancelarCadastro()">Cancelar</button></a>
                 <button type="submit" class="cadastrar">Cadastrar</button>
