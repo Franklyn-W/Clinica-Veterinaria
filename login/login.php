@@ -32,7 +32,6 @@
 
             <button type="submit">Entrar</button>
         </form>
-<<<<<<< HEAD
         <div class="developers-section">
             <h3>Desenvolvedores</h3>
             <ul>
@@ -43,8 +42,6 @@
                 </li>
             </ul>  
         </div> 
-=======
->>>>>>> parent of d38da0c (notificação da tela de login)
     </div>
 </body>
 
