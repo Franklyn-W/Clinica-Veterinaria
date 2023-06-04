@@ -17,28 +17,28 @@ require_once '../../scripts/validador_acesso.php';
 
 <body>
     <div class="container">
-        <form action="../../scripts/listar_registros.php" method="post">
+        <form action="../../scripts/script_listar_registros.php" method="post">
             <div class="search">
                 <label for="filter">Filtrar por:</label>
                 <select id="filter" name="filtro_tabela">
-                    <option value="tb_cliente">Dono</option>
-                    <option value="tb_pet">Animal</option>
+                    <option value="cliente">Dono</option>
+                    <option value="pet">Animal</option>
                     <option value="exame">Exames</option>
                     <option value="consulta">Consultas</option>
                     <option value="tratamento">Tramentos</option>
-                    <option value="tb_medico">Medicos</option>
-                    <option value="tb_funcionarios">Funcionarios</option>
+                    <option value="medico">Medicos</option>
+                    <option value="funcionario">funcionario</option>
                 </select>
 
                 <label for="searchBy">Pesquisar por:</label>
                 <select id="searchBy" name="filtro_coluna">
                     <option value="id">ID</option>
                     <option value="nome">Nome</option>
-                    <option value="codigo">Código</option>
                     <option value="cpf">CPF</option>
                     <option value="rg">RG</option>
                     <option value="telefone">Telefone</option>
                     <option value="email">E-mail</option>
+                    <option value="cep">CEP</option>
                 </select>
 
                 <label for="searchInput">Pesquisar:</label>

@@ -24,10 +24,10 @@
                 <li class="submenu">
                     <a id="novo-cadastro">Novo Cadastro</a>
                     <ul class="hidden">
-                        <li><a href="../submenus/cadastro_animal/cadastro_animal.php">Animal</a></li>
-                        <li><a href="../submenus/cadastri_cliente/cadastrar_cliente.php">Dono</a></li>
+                        <li><a href="../submenus/cadastrar_animal/cadastro_animal.php">Animal</a></li>
+                        <li><a href="../submenus/cadastrar_cliente/cadastro_cliente.php">Dono</a></li>
                         <li><a href="../submenus/cadastrar_funci/cadastro_funcionario.php">Funcionário</a></li> 
-                        <li><a href="../submenus/medico/cadastro_medico.php">Médico</a></li>
+                        <li><a href="../submenus/cadastrar_medico/cadastro_medico.php">Médico</a></li>
                         
                         
                     </ul>
