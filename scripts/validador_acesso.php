@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $caminho = '/../login/login.php?login=erro2';
+    $caminho = '../../login/login.php?login=erro2';
     
     if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
     

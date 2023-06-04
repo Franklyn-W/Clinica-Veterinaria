@@ -13,7 +13,7 @@ $perfis = [1 => 'FUNCIONARIO', 2 => 'MEDICO', 3 => 'USUARIO'];
 $usuario = $_POST['email'];
 $senha = $_POST['senha'];
 
-$select = "SELECT * FROM public.view_login where dado4 = '$usuario' and dado3 = '$senha'";
+$select = "SELECT * FROM public.view_login where dado3 = '$usuario' and dado2 = '$senha'";
 $execQuery = pg_exec($conexao, $select);
 $linhas = pg_fetch_row($execQuery);
 
@@ -28,11 +28,11 @@ if ($linhas[3] == $usuario && $linhas[2] == $senha) {
     }
 
     if ($usuario_perfil_acesso == 'MEDICO') {
-        # code...
+        header('location: ../menu_funcionario/menu/menu_medico.php');
     }
 
-    if ($usuario_perfil_acesso == "USUARIO") {
-        # code...
+    if ($usuario_perfil_acesso == "CLIENTE") {
+        header('location: ../menu_funcionario/menu/menu_cliente.php');
     }
 } else {
     $_SESSION['autenticado'] = 'NÃO';
