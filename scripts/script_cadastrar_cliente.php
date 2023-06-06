@@ -20,7 +20,7 @@ $perfil_acesso_cliente = "CLIENTE";
 	VALUES ('$nome', '$cpf', '$telefone', '$email', '$cep', '$endereco', '$numero_casa', '$bairro', '$cidade', '$uf', '$perfil_acesso_cliente')";
 $queryusuario = pg_exec($conexao, $insertusuario);
 
-header("Location: ../menu_funcionario/submenus/cadastri_cliente/cadastrar_cliente.php");
+header("Location: ../menu_funcionario/submenus/cadastrar_cliente/cadastro_cliente.php");
 
 ?>
 

@@ -31,6 +31,7 @@ require_once '../../scripts/conexao.php';
                     <option value="tratamento">Tramentos</option>
                     <option value="medico">Medicos</option>
                     <option value="funcionario">funcionario</option>
+                    <option value="atendimento">Atendimentos</option>
                 </select>
 
                 <label for="searchBy">Pesquisar por:</label>
