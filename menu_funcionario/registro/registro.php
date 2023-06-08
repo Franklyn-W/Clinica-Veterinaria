@@ -13,12 +13,52 @@ require_once '../../scripts/conexao.php';
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../menu/menu.css">
     <link rel="stylesheet" href="registro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registo</title>
 </head>
 
 <body>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h2>
+                Bem-Vindo
+                <p><?php echo $_SESSION['nome'];?></p>
+            </h2>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../agendamento/agendamento.php">Agendamento</a></li>
+                <li class="submenu">
+                    <a id="novo-cadastro">Novo Cadastro</a>
+                    <ul>
+                        <li>
+                            <a href="../submenus/cadastrar_animal/cadastro_animal.php">Animal</a>
+                        </li>
+                        <li>
+                            <a href="../submenus/cadastrar_cliente/cadastro_cliente.php">Dono</a>
+                        </li>
+                        <li>
+                            <a href="../submenus/cadastrar_funci/cadastro_funcionario.php">Funcionário</a>
+                        </li>
+                        <li>
+                            <a href="../submenus/cadastrar_medico/cadastro_medico.php">Médico</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../registro/registro.php">Registro</a></li>
+                <li><a href="../agendar/agenda.php">Agenda</a></li>
+                <li><a class="logout" href="../../scripts/logoff.php">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="./menu.js"></script>
+
+
+
+
+    <h3>Registro</h3>
     <div class="container">
         <form action="registro.php" method="post">
             <div class="search">
@@ -47,7 +87,7 @@ require_once '../../scripts/conexao.php';
 
                 <label for="searchInput">Pesquisar:</label>
                 <input type="text" id="searchInput" name="filtro_where">
-                <button class="search-button" type="submit"">Pesquisar</button>
+                <button class="search-button" type="submit">Pesquisar</button>
                 <a href="../menu/menu.php"> <button class="search-button" type="button">Voltar</button></a>
             </div>
         </form>

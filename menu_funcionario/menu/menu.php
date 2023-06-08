@@ -26,7 +26,7 @@
                 <li><a href="../agendamento/agendamento.php">Agendamento</a></li>
                 <li class="submenu">
                     <a id="novo-cadastro">Novo Cadastro</a>
-                    <ul class="hidden">
+                    <ul>
                         <li>
                             <a href="../submenus/cadastrar_animal/cadastro_animal.php">Animal</a>
                         </li>

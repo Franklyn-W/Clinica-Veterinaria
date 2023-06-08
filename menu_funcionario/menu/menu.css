@@ -14,7 +14,7 @@ p{
 h2{
     padding: 10px;
     text-align: center;
-    margin: 40px 30px 330px;
+    margin: 40px 30px 180px;
     user-select: none;
 }
 
@@ -73,6 +73,11 @@ h2{
 }
 .menu li a:hover{
     background-color: lightslategrey;
+}
+.logout{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
 }
 
 /****Estilos submenu ****/
