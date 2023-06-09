@@ -7,79 +7,80 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     text-align: center;
 }
 
-h2{
-    margin-top: 20px;
+h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+
 }
+
 form{
     display: flex;
+    margin-left: 200px;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 900px;
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #f5f5f5;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
     padding: 30px;
 }
 
 .left-section,
 .right-section{
-    width: 45%;
-    margin-top: 40px;
+    width: 40%;
+    margin-top: 0px;
 }
 
 label{
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: left;
     font-weight: bold;
-
 }
 
 input,
-select,
-textarea{
+select{
     display: block;
     width: 100%;
-    padding: 10px;
+    font-size: 18px;
+    margin-top: 5px;
     border: 1px solid black;
     border-radius: 5px;
+    padding: 5px;
 }
 
-.radio-group{
-    display: flex;
-}
 
 .button-group{
     display: flex;
     justify-content: flex-end;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    transform: translateY(200px);
+    margin-top: 40px;
+    margin: 30px;
+    width: 100%;
 }
-button{
-    margin-left: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+
+.button-group button{
+    padding: 10px;
+    margin-left: 10px;
     background-color: black;
     color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
+
 }
 
 button:focus{
     outline: none;
 }
-
 button:active{
     background-color: rgb(0, 30, 34);
-    color: white;
+    color: #fff;
 }
-
-
-
-
