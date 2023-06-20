@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tratamento.css">
+    <title>Consulta Veterinário</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Tratamento</h2>
+        <form action="" method="post">
+            <div class="left-section">
+                <div class="input-group">
+                    <label for="tratamento">Selecionar tratamento:</label>
+                    <select id="tratamento">
+                        <option value="">Selecionar tratamento:</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="animal">Dados de Animal:</label>
+                    <div class="animal-info" id="animalInfo">
+                        <p>Nome: Rex</p>
+                        <p>Espécie: cachorro</p>
+                        <p>idade:</p>
+                        <!--é apenas um exemplo de como vai ficar-->
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="observacao">Observação:</label>
+                    <textarea id="observacao" rows="10" cols="40" maxlength="500" required></textarea>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="input-group">
+                    <label for="filtro-dono">Filtrar dono:</label>
+                    <select id="filtro-dono">
+                        <option value="">Selecionar o Dono:</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="dono">Dados de dono:</label>
+                    <div class="dono-info" id="donoInfo">
+                        <p>Nome: João</p>
+                        <p>Telefone: (32)4123413</p>
+                        <p>Cpf:349012839</p>
+                        <p>Endereço: Rua dos bobos, 123</p>
+                        <!--é apenas um exemplo de como vai ficar-->
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="dados-consulta">Dados do Tratamento:</label>
+                    <div class="dados-consulta-info" id="dadosConsultaInfo">
+                        <p>Tipo: Urina</p>
+                        <p>Data: 20/05/2023</p>
+                        <p>Hora: 10:00</p>
+                        <p>custo:100</p>
+                        <!--é apenas um exemplo de como vai ficar-->
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="limpar">Limpar</button>
+                    <button type="button" class="cancelar">Cancelar</button>
+                    <button type="submit" class="finalizar">Finalizar Consulta</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="consulta.js"></script>
+</body>
+</html>

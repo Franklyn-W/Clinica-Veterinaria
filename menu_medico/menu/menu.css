@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.menu-toggle{
+    top: 10px;
+    left: 20px;
+    z-index: 99999;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-container{
+    transform: translateX(-200px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 230px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-container.open{
+    transform: translateX(0);
+}
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0,0,0);
+    padding: 10px;
+}
+
+.menu{
+    margin: 20px;
+    padding: 20px 0 0 0;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+.menu a, .menu li, .menu ul{
+    color: white;
+}
+.menu li{
+    display: block;
+    margin: 5px 10px;
+    color: rgb(255, 255, 255);
+    text-align: none;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.menu li.active a{
+    background-color: lightslategrey;
+    color: black;
+}
+.menu li a:hover{
+    background-color: lightslategrey;
+}
+.submenu ul{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+.submenu ul:not(.hidden){
+    display: block;
+    opacity: 1;
+}
+.submenu ul.hidden{
+    display: none !important;
+}
+.submenu li.active ul{
+    display: block;
+    opacity: 1;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;    
+}
