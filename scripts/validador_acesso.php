@@ -1,10 +1,9 @@
 <?php 
     session_start();
-    $caminho = '../../login/login.php?login=erro2';
     
     if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
     
-        header('Location: ' . $caminho);
+        header('Location: ../login/login.php?login=erro2');
         
         die();
     }
@@ -31,6 +30,6 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="../login/login.php" async defer></script>
+        <script src="/login/login.php" async defer></script>
     </body>
 </html>
