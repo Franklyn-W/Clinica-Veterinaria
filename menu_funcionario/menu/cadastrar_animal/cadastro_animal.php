@@ -20,7 +20,7 @@ require_once('../../../scripts/conexao.php');
 </head>
 
 <body>
-    <div class="menu-container">
+<div class="menu-container">
         <div class="menu-header">
             <h2>
                 Bem-Vindo
@@ -34,16 +34,16 @@ require_once('../../../scripts/conexao.php');
                     <a id="novo-cadastro">Novo Cadastro</a>
                     <ul>
                         <li>
-                            <a href="../submenus/cadastrar_animal/cadastro_animal.php">Animal</a>
+                            <a href="../menu/cadastrar_animal/cadastro_animal.php">Animal</a>
                         </li>
                         <li>
-                            <a href="../submenus/cadastrar_cliente/cadastro_cliente.php">Dono</a>
+                            <a href="../menu/cadastrar_cliente/cadastro_cliente.php">Dono</a>
                         </li>
                         <li>
-                            <a href="../submenus/cadastrar_funci/cadastro_funcionario.php">Funcionário</a>
+                            <a href="../menu/cadastrar_funci/cadastro_funcionario.php">Funcionário</a>
                         </li>
                         <li>
-                            <a href="../submenus/cadastrar_medico/cadastro_medico.php">Médico</a>
+                            <a href="../menu/cadastrar_medico/cadastro_medico.php">Médico</a>
                         </li>
                     </ul>
                 </li>
