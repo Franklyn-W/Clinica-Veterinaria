@@ -29,27 +29,27 @@ require_once('../../../scripts/conexao.php');
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="../agendamento/agendamento.php">Agendamento</a></li>
+                <li><a href="../../agendamento/agendamento.php">Agendamento</a></li>
                 <li class="submenu">
                     <a id="novo-cadastro">Novo Cadastro</a>
                     <ul>
                         <li>
-                            <a href="../menu/cadastrar_animal/cadastro_animal.php">Animal</a>
+                            <a href="../cadastrar_animal/cadastro_animal.php">Animal</a>
                         </li>
                         <li>
-                            <a href="../menu/cadastrar_cliente/cadastro_cliente.php">Dono</a>
+                            <a href="../cadastrar_cliente/cadastro_cliente.php">Dono</a>
                         </li>
                         <li>
-                            <a href="../menu/cadastrar_funci/cadastro_funcionario.php">Funcionário</a>
+                            <a href="../cadastrar_funci/cadastro_funcionario.php">Funcionário</a>
                         </li>
                         <li>
-                            <a href="../menu/cadastrar_medico/cadastro_medico.php">Médico</a>
+                            <a href="../cadastrar_medico/cadastro_medico.php">Médico</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="../registro/registro.php">Registro</a></li>
-                <li><a href="../agendar/agenda.php">Agenda</a></li>
-                <li><a class="logout" href="../../scripts/logoff.php">Sair</a></li>
+                <li><a href="../../registro/registro.php">Registro</a></li>
+                <li><a href="../../agendar/agenda.php">Agenda</a></li>
+                <li><a class="logout" href="../../../scripts/logoff.php">Sair</a></li>
             </ul>
         </nav>
     </div>

@@ -27,5 +27,7 @@ $insert_medico = "INSERT INTO public.tb_medico(
 
 $queryusuario = pg_exec($conexao, $insert_medico);
 
-header("Location: ../menu_funcionario/submenus/cadastrar_medico/cadastro_medico.php");
+header("Location: ../menu_funcionario/menu/cadastrar_medico/cadastro_medico.php");
 ?>
+
+<!-- <a href="../menu_funcionario/menu/cadastrar_cliente/cadastro_cliente.php" -->

@@ -23,6 +23,9 @@ $perfil_acesso_cliente = "FUNCIONARIO";
 	VALUES ('$nome', '$rg', '$cpf', '$telefone', '$email', '$cep', '$endereco', '$numero_casa', '$bairro', '$cidade', '$uf', '$salario', '$perfil_acesso_cliente')";
 $queryusuario = pg_exec($conexao, $insertusuario);
 
-header("Location: ../menu_funcionario/submenus/cadastrar_funci/cadastro_funcionario.php");
+header("Location: ../menu_funcionario/menu/cadastrar_funci/cadastro_funcionario.php");
 
 ?>
+
+<!-- <a href="../menu_funcionario/menu/cadastrar_cliente/cadastro_cliente.php" -->
+
